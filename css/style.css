@@ -19,8 +19,7 @@
  .header{
      height: 95vh;
      background-image:
-      linear-gradient(var(--light-green),var(--medium-green)),
-      url('../img/hero.jpg');
+      url('../img/hmk1.jpg');
      background-size: cover;
      background-position: center;
      clip-path: polygon(0 0, 100% 0, 83% 94%, 0 57%);
@@ -50,11 +49,7 @@
      animation-duration: 3s;
  }
 
- @keyframes moveInLeft{
-     0%{opacity: 0; transform: translateX(-100px)}
-     80%{transform: translateX(20px)}
-    100%{opacity: 1; transform: translateX(0)}
- }
+ 
 
  .heading-primary-sub{
      display: block;
@@ -63,15 +58,23 @@
      animation-name: moveInRight;
      animation-duration: 3s;
  }
- @keyframes moveInRight{
-    0%{opacity: 0; transform: translateX(100px)}
-    80%{transform: translateX(-20px)}
-   100%{opacity: 1; transform: translateX(0)}
-}
+ 
  .text-box{
      position: absolute;
      top: 40%;
      left: 50%;
      transform: translate(-50%, -50%);
  }
+ .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
 
