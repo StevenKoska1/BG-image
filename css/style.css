@@ -13,7 +13,7 @@
     font-size: 1rem;
     line-height: 1.7;
     color: #777;
-    padding: 30px;
+    
  }
 
  .header{
@@ -35,9 +35,21 @@
      height: 35px;
  }
 
+ .header{
+	 margin: 0 auto;
+	 animation-name: header;
+     animation-duration: 2s;
+     animation-fill-mode: forwards; 
+ }
+ 
  .heading-primary{
      color: white;
      text-transform: uppercase;
+	 animation: button;
+     animation-duration: 6s;
+     animation-fill-mode: forwards;
+     transition-property: transform;
+     transition-duration: 1s;
  }
 
  .heading-primary-main{
@@ -64,10 +76,20 @@
      top: 40%;
      left: 50%;
      transform: translate(-50%, -50%);
+	 animation-name: text-box;
+     animation-duration: 1s;
+     animation-fill-mode: forwards; 
  }
+ 
+ .text-box h2{
+	 text-align: center;
+	 color: white;
+ }
+ 
  .button {
-    background-color: #4CAF50;
-    border: none;
+    background-color: #555555;
+    border: solid;
+	border-radius: 4px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -77,4 +99,15 @@
     margin: 4px 2px;
     cursor: pointer;
   }
-
+  
+  @keyframes text-box{
+    0%{top: -200px;}
+    100%{top: 400px}
+  }
+  @keyframes button{
+    0%{opacity: 0;}
+    10%{opacity: 0;}
+	20%{opacity: 0;}
+	100%{opacity: 1;}
+	
+}
